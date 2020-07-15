@@ -1,0 +1,57 @@
+tracker-content-main {
+  display: flex;
+  padding: 20px;
+}
+.form-content {
+  position: relative;
+  background-color: #303030;
+  flex-direction: column;
+  border: solid black 1px;
+  margin: 50px;
+  margin-left: 5%;
+  padding: 10px;
+  width: 500;
+}
+label {
+  text-align: center;
+}
+input {
+  width: 100px;
+}
+.stats-output-wrapper {
+  display: inline-block;
+}
+.stats-output {
+  position: relative;
+  flex-direction: column;
+  background-color: #303030;
+  width: 500px;
+  height: 80%;
+  border: black solid 1px;
+  margin: 50px;
+  padding: 10px;
+  margin-left: 5%;
+}
+.legendName {
+  text-align: left;
+}
+.legend-stats {
+  background-color: rgba(255, 0, 0, 0.363);
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  border: 1px solid black;
+  padding-left: 20px;
+}
+p {
+  text-align: left;
+}
+.avatar-pic {
+  width: 100px;
+  height: 100px;
+}
+img {
+  width: 150px;
+  height: 150px;
+  display: grid;
+}

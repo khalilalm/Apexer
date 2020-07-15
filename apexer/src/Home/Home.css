@@ -1,0 +1,70 @@
+.title {
+  color: rgb(70, 0, 0);
+  font-size: 2em;
+  font-size: 100px;
+  position: absolute;
+  top: 37%;
+  left: 34%;
+  font-style: italic;
+}
+.title::after{
+  content:"Tracker";
+  position: absolute;
+  top: 59%;
+  left: 34%;
+  font-style: italic;
+}
+.sub-title{
+  color:maroon;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 24%;
+  font-style: italic;
+}
+.hero {
+  max-height: 600px;
+  background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
+  background-size: cover;
+  
+  height: 600px;
+}
+
+.twitter-embed {
+  float: left;
+  padding: 20px;
+  margin: 20px;
+}
+.tip-links {
+  display: inline-block;
+}
+.forum-links {
+  display: inline-block;
+}
+
+.content-main {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: gray;
+  padding: 20px;
+  margin: 20px;
+  height: 900px;
+  max-height: 1070px;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+}
+
+@media only screen and (max-width:1141px){
+  .sub-title{
+    display: relative;
+    
+  }
+  .content-main{
+    
+  }
+}

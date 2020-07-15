@@ -1,0 +1,23 @@
+Apexer
+-General Feature Suggestions
+    -twitter feed
+-Visual Features/CSS
+    -Home
+        -Twitter feed aligned left 
+    -Tracker
+        align graph and data below
+    -Resources
+        tips aligned center
+    -About
+    align center
+
+
+-Technical Features/Javascript
+    -Home
+        -Twitter feed
+    -Tracker
+        -Graph Stat Tracking
+        -UserEntry
+    -Resources
+        -Tips and Tricks
+    -About

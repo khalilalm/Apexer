@@ -1,0 +1,32 @@
+{
+  "name": "apexer",
+  "version": "1.0.0",
+  "description": "stat tracker for apex",
+  "main": "server.js",
+  "dependencies": {
+    "@material-ui/core": "^4.10.1",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fetch": "^1.1.0",
+    "helmet": "*",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "react-linechart": "^1.1.12",
+    "react-number-format": "^4.4.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "heroku-post-build":"NPM_CONFIG_PRODUCTION=false npm install --prefix apexer && npm run build --prefix client"
+  },
+  "author": "Khalil Al-Mujeeb",
+  "license": "ISC"
+}

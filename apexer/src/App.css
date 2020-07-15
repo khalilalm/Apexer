@@ -1,0 +1,16 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font:sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+
+  .App {
+  text-align: center;
+}
+body{
+  background:  linear-gradient(to left, red, 50%, maroon 100%);
+}
+
+}
