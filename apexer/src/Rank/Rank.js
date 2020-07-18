@@ -17,7 +17,7 @@ class Rank extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     fetch(
-      `http://localhost:5000/api/v1/rank/${this.state.platform}/${this.state.profile}`
+      `/api/v1/rank/${this.state.platform}/${this.state.profile}`
     )
       .then((res) => res.json())
       .then((res) =>

@@ -34,7 +34,7 @@ class Tracker extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     fetch(
-      `http://localhost:5000/api/v1/profile/${this.state.platform}/${this.state.profile}/${this.state.segmentType}`
+      `/api/v1/profile/${this.state.platform}/${this.state.profile}/${this.state.segmentType}`
     )
       .then((res) => res.json())
       .then((res) =>
