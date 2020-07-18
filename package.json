@@ -24,9 +24,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "server": "nodemon server",
-    "heroku-post-build": "NPM_CONFIG_PRODUCTION=false npm install --prefix apexer && npm run build --prefix client"
-  },
+    "server": "node server",
+    "heroku-postbuild": "cd apexer && npm install --only=dev && npm install && npm run build"
+  },"proxy": "http://localhost:8000","engines": {
+  "node": "12.14.0"
+},
   "author": "Khalil Al-Mujeeb",
   "license": "ISC"
 }
