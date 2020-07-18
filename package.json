@@ -26,9 +26,11 @@
     "start": "node server",
     "server": "node server",
     "heroku-postbuild": "cd apexer && npm install --only=dev && npm install && npm run build"
-  },"proxy": "http://localhost:8000","engines": {
-  "node": "12.14.0"
-},
+  },
+  "proxy": "http://localhost:8000",
+  "engines": {
+    "node": "12.14.0"
+  },
   "author": "Khalil Al-Mujeeb",
   "license": "ISC"
 }
