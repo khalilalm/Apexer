@@ -1,3 +1,6 @@
+.content-container {
+  background-color: rgb(31, 26, 26);
+}
 .title {
   color: rgb(70, 0, 0);
   font-size: 2em;
@@ -7,15 +10,26 @@
   left: 34%;
   font-style: italic;
 }
-.title::after{
-  content:"Tracker";
+.title::after {
+  content: "Tracker";
   position: absolute;
   top: 59%;
   left: 34%;
   font-style: italic;
 }
-.sub-title{
-  color:maroon;
+.np {
+  display: inline-block;
+  height: 80px;
+}
+.main {
+  background-color: rgb(34, 31, 31);
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  float: right;
+}
+.sub-title {
+  color: maroon;
   padding: 20px;
   position: absolute;
   text-align: center;
@@ -27,27 +41,36 @@
   max-height: 600px;
   background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
   background-size: cover;
-  
+
   height: 600px;
 }
 
-.twitter-embed {
+.header {
+  padding: 10px;
+  height: 150px;
+  background-color: rgb(34, 31, 31);
+}
+.class-padding {
   float: left;
+
+  background-color: rgb(34, 31, 31);
   padding: 20px;
   margin: 20px;
+}
+.video-wrapper{
+  display: flex;
+  flex-direction: column;
 }
 .tip-links {
   display: inline-block;
 }
 .forum-links {
   display: inline-block;
+  background-color: rgb(34, 31, 31);
 }
 
 .content-main {
   position: relative;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: gray;
   padding: 20px;
   margin: 20px;
   height: 900px;
@@ -59,12 +82,16 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width:1141px){
-  .sub-title{
+@media only screen and (max-width: 1141px) {
+  .sub-title {
     display: relative;
-    
   }
-  .content-main{
-    
+  .content-main {
   }
+}
+h3{
+  color: black;
+}
+p{
+  color: black;
 }

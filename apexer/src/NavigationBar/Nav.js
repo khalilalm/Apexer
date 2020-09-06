@@ -10,9 +10,11 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav>
+        <nav> 
+          
           <img src={logo.id} class="logo"></img>
-          <li className="title-nav"><strong>Apexer</strong></li>
+          <li className="title-nav"><strong>Apexer</strong></li> 
+         
           <Link to="/">
             <li>
               Home
@@ -36,6 +38,8 @@ class Nav extends Component {
               About
             </li>
           </Link>
+         <li><button>Login</button></li>
+         <li><input placeholder="Search"></input></li>
         </nav>
       </div>
     );
