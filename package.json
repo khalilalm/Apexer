@@ -12,7 +12,7 @@
     "fetch": "^1.1.0",
     "helmet": "*",
     "morgan": "^1.10.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "react-linechart": "^1.1.12",
     "react-number-format": "^4.4.1",
     "react-router-dom": "^5.1.2",
