@@ -1,0 +1,28 @@
+.player{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+.player:hover{
+    background-color: #25252c;
+}
+
+.player_details {
+    display: flex;
+    align-items: center;
+}
+
+.player>div>img {
+    object-fit:contain;
+    margin-right: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 0%;
+    border:maroon 1px solid ;
+    }
+

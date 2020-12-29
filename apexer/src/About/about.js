@@ -26,6 +26,15 @@ class about extends Component {
             <img className="social-icon" src={instagram}></img>
           </a>
         </div>
+        <div className="main-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h4>Resources</h4>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     );
   }

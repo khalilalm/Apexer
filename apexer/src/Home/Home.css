@@ -52,14 +52,18 @@
 }
 .class-padding {
   float: left;
-
+  
   background-color: rgb(34, 31, 31);
   padding: 20px;
-  margin: 20px;
+  margin: 40px;
 }
 .video-wrapper{
   display: flex;
   flex-direction: column;
+  transition: background-color .5s;
+}
+.video-wrapper:hover{
+  background-color: rgb(67, 66, 66);
 }
 .tip-links {
   display: inline-block;
@@ -75,11 +79,21 @@
   margin: 20px;
   height: 900px;
   max-height: 1070px;
+  transition: background-color .5s;
 }
 
 footer {
   position: fixed;
   text-align: center;
+}
+.bg-textColor{
+  background-origin: padding-box;
+  
+  padding: 5px;
+  
+}
+.bg-textColor:hover{
+  background-color: rgb(67, 66, 66);
 }
 
 @media only screen and (max-width: 1141px) {
@@ -94,4 +108,275 @@ h3{
 }
 p{
   color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  .content-container {
+    background-color: rgb(31, 26, 26);
+  }
+  .title {
+    color: rgb(70, 0, 0);
+    font-size: 2em;
+    font-size: 100px;
+    position: absolute;
+    top: 37%;
+    left: 34%;
+    font-style: italic;
+  }
+  .title::after {
+    content: "Tracker";
+    position: absolute;
+    top: 59%;
+    left: 34%;
+    font-style: italic;
+  }
+  .np {
+    display: inline-block;
+    height: 80px;
+  }
+  .main {
+    background-color: rgb(34, 31, 31);
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    float: right;
+  }
+  .sub-title {
+    color: maroon;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 24%;
+    font-style: italic;
+  }
+  .hero {
+    max-height: 600px;
+    background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
+    background-size: cover;
+  
+    height: 600px;
+  }
+  
+  .header {
+    padding: 10px;
+    height: 150px;
+    background-color: rgb(34, 31, 31);
+  }
+  .class-padding {
+    float: left;
+    
+    background-color: rgb(34, 31, 31);
+    padding: 20px;
+    margin: 40px;
+  }
+  .video-wrapper{
+    display: flex;
+    flex-direction: column;
+    transition: background-color .5s;
+  }
+  .video-wrapper:hover{
+    background-color: rgb(67, 66, 66);
+  }
+  .tip-links {
+    display: inline-block;
+  }
+  .forum-links {
+    display: inline-block;
+    background-color: rgb(34, 31, 31);
+  }
+  
+  .content-main {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    height: 900px;
+    max-height: 1070px;
+    transition: background-color .5s;
+  }
+  
+  footer {
+    position: fixed;
+    text-align: center;
+  }
+  .bg-textColor{
+    background-origin: padding-box;
+    
+    padding: 5px;
+    
+  }
+  .bg-textColor:hover{
+    background-color: rgb(67, 66, 66);
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-container {
+    background-color: rgb(31, 26, 26);
+  }
+  .title {
+    color: rgb(70, 0, 0);
+    font-size: 2em;
+    font-size: 100px;
+    position: absolute;
+    top: 27%;
+    left: 25%;
+    font-style: italic;
+  }
+  .title::after {
+    content: "Tracker";
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    font-style: italic;
+  }
+  .np {
+    display: inline-block;
+    height: 80px;
+  }
+  .main {
+    background-color: rgb(34, 31, 31);
+    margin: 20px;
+    width: 200px;
+    float: right;
+  }
+  .sub-title {
+    color: maroon;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 10%;
+    font-style: italic;
+  }
+  .hero {
+    max-height: 600px;
+    background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .header {
+    padding: 10px;
+    height: 150px;
+    background-color: rgb(34, 31, 31);
+  }
+  .class-padding {
+    width: 300;
+    background-color: rgb(34, 31, 31);
+    padding: 20px;
+    margin: 40px;
+  }
+  .video-wrapper{
+    display: flex;
+    flex-direction: column;
+    transition: background-color .5s;
+  }
+  .video-wrapper:hover{
+    background-color: rgb(67, 66, 66);
+  }
+  .tip-links {
+    display: inline-block;
+  }
+  .forum-links {
+    width: 20px;
+    display: inline-block;
+    background-color: rgb(34, 31, 31);
+  }
+  
+  .content-main {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    height: 900px;
+    max-height: 1070px;
+    transition: background-color .5s;
+  }
+  
+  footer {
+    position: fixed;
+    text-align: center;
+  }
+  .bg-textColor{
+    background-origin: padding-box;
+    
+    padding: 5px;
+    
+  }
+  .bg-textColor:hover{
+    background-color: rgb(67, 66, 66);
+  }
+  
+ 
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  
 }
