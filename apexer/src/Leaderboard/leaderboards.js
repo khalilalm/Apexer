@@ -6,10 +6,10 @@ export const Leaderboards = ({ avatar, name, rankPoints}) => {
         <div className="player">
             <div className="player_details">
                 <img src={avatar} alt="avatar" />
-                <p>{name}</p>
+                <p>{name}  </p>
             </div>
             
-        <p>🔴 {rankPoints}</p>
+        <p>   {rankPoints}</p>
         </div>
     )
 }

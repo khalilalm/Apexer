@@ -84,9 +84,10 @@ class Tracker extends Component {
 
     return (
       <div className="tracker-content-main">
-        <h1>Stat Tracker</h1>
+      
 
-        <div className="form-wrapper">
+        <div className="form-wrapper">  
+        <h1>Stat Tracker</h1>
           <form onSubmit={this.onSubmit} className="form-content">
             <label to="platform"> Choose Platform: </label>
             <select

@@ -1,4 +1,4 @@
-tracker-content-main {
+.tracker-content-main {
   display: flex;
   padding: 20px;
 }
@@ -26,7 +26,7 @@ input {
   flex-direction: column;
   background-color: #303030;
   width: 500px;
-  height: 80%;
+  height: 95%;
   border: black solid 1px;
   margin: 50px;
   padding: 10px;

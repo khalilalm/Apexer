@@ -38,8 +38,7 @@ class Nav extends Component {
               About
             </li>
           </Link>
-         <li><button>Login</button></li>
-         <li><input placeholder="Search"></input></li>
+        
         </nav>
       </div>
     );

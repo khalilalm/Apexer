@@ -8,7 +8,7 @@ class about extends Component {
 
   render() {
     return (
-      <div>
+      <div className="about-section">
         <h1 style={{ "text-decoration": "underline" }}>About</h1>
         <p style={{ "text-align": "center" }}>
           <strong>Built using TRN Tracker API:</strong>{" "}
@@ -26,15 +26,7 @@ class about extends Component {
             <img className="social-icon" src={instagram}></img>
           </a>
         </div>
-        <div className="main-footer">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h4>Resources</h4>
-            </div>
-          </div>
-        </div>
-        </div>
+        
       </div>
     );
   }
