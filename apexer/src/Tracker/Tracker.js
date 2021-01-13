@@ -118,10 +118,7 @@ class Tracker extends Component {
         <form></form>
 
         <div className="stats-output">
-          {loaded ? (
-            <ReactBootStrap.Spinner animation="border" />
-          ) : (
-            <>
+        
               <div className="legend-stats">
                 <p>{rankedLevel.value}</p>
                 <h1 className="legendName">Pathfinder</h1>
@@ -243,8 +240,8 @@ class Tracker extends Component {
                 </p>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-crypto.png.adapt.crop16x9.png"></img>
               </div>
-            </>
-          )}
+          
+         
           <p >
             <strong>
               *If badge is not applied on charactor card stats won't appear
