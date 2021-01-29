@@ -14,9 +14,7 @@ class Home extends Component {
       <div className="content-container">
         <div className="hero">
           <h1 className="title">APEX</h1>
-          <h3 className="sub-title">
-            "Look up your stats,apex legends players and more"
-          </h3>
+         
         </div>
         <div className="header">
           <img className="np" src={newspaper}></img>
