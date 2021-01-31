@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Tracker.css";
-import * as ReactBootStrap from "react-bootstrap";
+
 
 
 class Tracker extends Component {
@@ -22,7 +22,7 @@ class Tracker extends Component {
     damageOctane: {},
     rankedLevel: {},
     rankData: {},
-    loaded: false,
+    
   };
 
   onChange = (e) => {
@@ -34,7 +34,7 @@ class Tracker extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     fetch(
-      `/api/v1/profile/${this.state.platform}/${this.state.profile}/${this.state.segmentType}`
+      `http://localhost:5000/api/v1/profile/${this.state.platform}/${this.state.profile}/${this.state.segmentType}`
     )
       .then((res) => res.json())
       .then((res) =>
@@ -51,7 +51,7 @@ class Tracker extends Component {
           damageCrypto: res.data.data[9].stats.kills,
           rankedLevel: res.data,
           rankData: res.data.data,
-          loaded: false,
+          
         })
       )
       .catch((error) => {
@@ -76,7 +76,7 @@ class Tracker extends Component {
       damageCrypto,
       rankedLevel,
       rankData,
-      loaded,
+      
     } = this.state;
 
     console.log(rankedLevel);
