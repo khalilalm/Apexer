@@ -8,13 +8,15 @@ class about extends Component {
 
   render() {
     return (
+      
       <div className="about-section">
-        <h1 style={{ "text-decoration": "underline" }}>About</h1>
+        <div className="about-content-container">
+        <h1 style={{ "text-decoration": "underline","color": "black", "text-align": "center" }}>About</h1>
         <p style={{ "text-align": "center" }}>
           <strong>Built using TRN Tracker API:</strong>{" "}
           <a href="https://tracker.gg/">TRN TRACKER </a>{" "}
         </p>
-        <p style={{ "text-align": "center" }}>Follow Tracker Network:</p>
+        <p style={{ "text-align": "center" }}><strong>Follow Tracker Network:</strong></p>
         <div className="social-links">
           <a href="https://twitter.com/Apex_Tracker">
             <img className="social-icon" src={twitter}></img>
@@ -26,8 +28,9 @@ class about extends Component {
             <img className="social-icon" src={instagram}></img>
           </a>
         </div>
-        
+        </div>
       </div>
+      
     );
   }
 }

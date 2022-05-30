@@ -236,7 +236,7 @@ class Tracker extends Component {
           <div>
             <p>
               <strong>
-                *If badge is not applied on charactor card stats won't appear
+                *If badge is not applied on character card some stats may not appear
               </strong>
             </p>
           </div>
