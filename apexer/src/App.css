@@ -1,17 +1,20 @@
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
-  font:sans-serif;
+ font:sans-serif;
+
+}
+
+.home{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: max-content;
 }
 
 @media screen and (min-width: 480px) {
 
-  .App {
-    display: flex;
-  text-align: center;
-}
+  
 body{
-  background:  linear-gradient(to left, red, 50%, maroon 100%);
+  background: #ff2801 ;
 }
 
 }

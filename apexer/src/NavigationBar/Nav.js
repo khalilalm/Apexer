@@ -10,35 +10,28 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav> 
-          
-          <img src={logo.id} class="logo"></img>
-          <li className="title-nav"><strong>Apexer</strong></li> 
-         
-          <Link to="/">
-            <li>
-              Home
-            </li>
-          </Link>
+        <nav className="main-nav">
+          <div className="logo">
+            <img src={logo.id}></img>
+          </div>
 
-          <Link to="/Tracker">
-            <li>
-              Tracker
+          <ul>
+            <li className="title-nav">
+              <strong>Apexer</strong>
             </li>
-          </Link>
-
-          <Link to="/Rank">
             <li>
-              Rank
+              <Link to="/">Home</Link>
             </li>
-          </Link>
-
-          <Link to="/About">
             <li>
-              About
+              <Link to="/Tracker">Tracker</Link>
+            </li>{" "}
+            {/* <li>
+              <Link to="/Rank">LFG</Link>
+            </li> */}
+            <li>
+              <Link to="/About">About</Link>
             </li>
-          </Link>
-        
+          </ul>
         </nav>
       </div>
     );

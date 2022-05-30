@@ -1,5 +1,14 @@
-.content-container {
-  background-color: rgb(31, 26, 26);
+.main {
+}
+.tips-tricks {
+}
+.content-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .title {
   color: rgb(70, 0, 0);
@@ -17,85 +26,115 @@
   left: 34%;
   font-style: italic;
 }
-.np {
-  display: inline-block;
-  height: 80px;
-}
-.main {
-  background-color: rgb(34, 31, 31);
-  padding: 20px;
-  margin: 20px;
-  width: 200px;
-  float: right;
-}
-.sub-title {
-  color: maroon;
-  padding: 20px;
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 24%;
+.patch-notes {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5%;
+  background-color: gray;
+  color: black;
+  text-decoration: black;
   font-style: italic;
 }
-.hero {
-  max-height: 600px;
-  background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
-  background-size: cover;
 
-  height: 600px;
+.line {
+  border: 1px solid black;
 }
-
-.header {
-  padding: 10px;
-  height: 150px;
-  background-color: rgb(34, 31, 31);
+.vertical-line{
+  height:5px;
+  border: 1px solid black;
 }
-.class-padding {
-  float: left;
-  
-  background-color: rgb(34, 31, 31);
+.live-vid {
+  float: right;
+  padding: 25px;
+}
+.videos-guides {
+  background-color: rgb(30, 29, 29);
+  border-radius: 1%;
   padding: 20px;
-  margin: 40px;
+  box-shadow: 10px 10px;
 }
-.video-wrapper{
+.news-updates {
+  text-align: center;
+  border-radius: 1%;
+  background-color: rgb(30, 29, 29);
   display: flex;
   flex-direction: column;
-  transition: background-color .5s;
-}
-.video-wrapper:hover{
-  background-color: rgb(67, 66, 66);
-}
-.tip-links {
-  display: inline-block;
-}
-.forum-links {
-  display: inline-block;
-  background-color: rgb(34, 31, 31);
-}
-
-.content-main {
-  position: relative;
-  padding: 20px;
   margin: 20px;
-  height: 900px;
-  max-height: 1070px;
-  transition: background-color .5s;
+  padding: 10px;
+  box-shadow: 10px 10px;
+}
+.video-header:after {
+  content: " ";
+  display: block;
+  border: 2px solid rgb(77, 12, 12);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-footer {
-  position: fixed;
+.news-header:after {
+  content: " ";
+  display: block;
+  border: 2px solid rgb(77, 12, 12);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.wraith-img {
+  width: 50%;
+  height: 600px;
+  border-radius: 1%;
+  margin: 10px;
+}
+.wraith-img:hover {
+  box-shadow: rgb(54, 53, 53) 10px 10px;
+}
+
+.LOTW {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: gray;
+  padding: 10px;
+}
+.lotw-description {
   text-align: center;
 }
-.bg-textColor{
-  background-origin: padding-box;
-  
-  padding: 5px;
-  
+.revenent-img {
+  width: 500px;
+  height: 300px;
+  border-radius: 1%;
+  margin: 10px;
+ 
 }
-.bg-textColor:hover{
-  background-color: rgb(67, 66, 66);
+.revenent-img:hover {
+  box-shadow: 10px 10px;
 }
-
+.fan-art{
+  background-color: gray;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+}
+.legend-refs{
+  list-style: none;
+text-decoration: none;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: maroon;
+  text-decoration: none;
+}
 @media only screen and (max-width: 1141px) {
   .sub-title {
     display: relative;
@@ -103,27 +142,12 @@ footer {
   .content-main {
   }
 }
-h3{
+h3 {
   color: black;
 }
-p{
+p {
   color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
   ##Device = Desktops
@@ -131,10 +155,6 @@ p{
 */
 
 @media (min-width: 1281px) {
-  
-  .content-container {
-    background-color: rgb(31, 26, 26);
-  }
   .title {
     color: rgb(70, 0, 0);
     font-size: 2em;
@@ -175,10 +195,10 @@ p{
     max-height: 600px;
     background-image: url(https://images.alphacoders.com/989/thumb-1920-989913.png);
     background-size: cover;
-  
+
     height: 600px;
   }
-  
+
   .header {
     padding: 10px;
     height: 150px;
@@ -186,19 +206,17 @@ p{
   }
   .class-padding {
     float: left;
-    
+
     background-color: rgb(34, 31, 31);
     padding: 20px;
     margin: 40px;
   }
-  .video-wrapper{
+  .video-wrapper {
     display: flex;
     flex-direction: column;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
   }
-  .video-wrapper:hover{
-    background-color: rgb(67, 66, 66);
-  }
+
   .tip-links {
     display: inline-block;
   }
@@ -206,30 +224,28 @@ p{
     display: inline-block;
     background-color: rgb(34, 31, 31);
   }
-  
+
   .content-main {
     position: relative;
     padding: 20px;
     margin: 20px;
     height: 900px;
     max-height: 1070px;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
   }
-  
+
   footer {
     position: fixed;
     text-align: center;
   }
-  .bg-textColor{
+  .bg-textColor {
     background-origin: padding-box;
-    
+
     padding: 5px;
-    
   }
-  .bg-textColor:hover{
+  .bg-textColor:hover {
     background-color: rgb(67, 66, 66);
   }
-  
 }
 
 /* 
@@ -238,9 +254,7 @@ p{
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
   /* CSS */
-  
 }
 
 /* 
@@ -293,7 +307,7 @@ p{
     background-size: cover;
     height: 600px;
   }
-  
+
   .header {
     padding: 10px;
     height: 150px;
@@ -305,12 +319,12 @@ p{
     padding: 20px;
     margin: 40px;
   }
-  .video-wrapper{
+  .video-wrapper {
     display: flex;
     flex-direction: column;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
   }
-  .video-wrapper:hover{
+  .video-wrapper:hover {
     background-color: rgb(67, 66, 66);
   }
   .tip-links {
@@ -321,31 +335,28 @@ p{
     display: inline-block;
     background-color: rgb(34, 31, 31);
   }
-  
+
   .content-main {
     position: relative;
     padding: 20px;
     margin: 20px;
     height: 900px;
     max-height: 1070px;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
   }
-  
+
   footer {
     position: fixed;
     text-align: center;
   }
-  .bg-textColor{
+  .bg-textColor {
     background-origin: padding-box;
-    
+
     padding: 5px;
-    
   }
-  .bg-textColor:hover{
+  .bg-textColor:hover {
     background-color: rgb(67, 66, 66);
   }
-  
- 
 }
 
 /* 
@@ -354,9 +365,7 @@ p{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
   /* CSS */
-  
 }
 
 /* 
@@ -365,9 +374,7 @@ p{
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
   /* CSS */
-  
 }
 
 /* 
@@ -376,7 +383,5 @@ p{
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
   /* CSS */
-  
 }
