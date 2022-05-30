@@ -15,17 +15,7 @@ class Home extends Component {
         <div className="hero">
           <h1 className="title">APEX</h1>
           <div className="live-vid">
-            <iframe
-              className="vid-item"
-              width="800"
-              height="480"
-              src="https://www.youtube.com/embed/a2J7e2ZcTxw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              autoplay
-            ></iframe>
+            
           </div>
         </div>
 
