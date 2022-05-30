@@ -10,7 +10,7 @@ class Tracker extends Component {
     Pathfinder: {},
     Wraith: {},
     Bangalore: {},
-    Revenent: {},
+    Revenant: {},
     Caustic: {},
     Gibralter: {},
     Loba: {},
@@ -50,7 +50,7 @@ class Tracker extends Component {
           Pathfinder: res.data.data[8].stats.kills,
           Wraith: res.data.data[0].stats.kills,
           Bangalore: res.data.data[5].stats.kills,
-          Revenent: res.data.data[1].stats.kills,
+          Revenant: res.data.data[1].stats.kills,
           Caustic: res.data.data[6].stats.kills,
           Gibralter: res.data.data[7].stats.kills,
           Loba: res.data.data[2].stats.kills,
@@ -76,7 +76,7 @@ class Tracker extends Component {
       Pathfinder,
       Wraith,
       Bangalore,
-      Revenent,
+      Revenant,
       Caustic,
       Gibralter,
       Loba,
@@ -227,10 +227,10 @@ class Tracker extends Component {
           {/*  */}
           <div className="legend-stats">
             <CharTrack
-              name="Revenent"
+              name="Revenant"
               avatar={"https://trackercdn.com/cdn/apex.tracker.gg/legends/revenant-tile.png"}
-              kills={Revenent.value}
-              percentile={Revenent.percentile}
+              kills={Revenant.value}
+              percentile={Revenant.percentile}
             />
           </div>
           <div>
