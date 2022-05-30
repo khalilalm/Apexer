@@ -33,14 +33,14 @@ class Home extends Component {
           <div className="main">
             <div className="tips-tricks">
               <h3 style={{ color: "rgb(77, 12, 12)" }}>Tips & Tricks</h3>
-              <p>
+              <p style={{ color: "rgb(77, 12, 12)" }}>
                 <strong>Improving Aim:</strong>
                 <a href="https://www.giantbomb.com/apex-legends/3030-72014/forums/share-your-pro-tips-here-1862722/">
                   <br />
                   Giant Bomb Forums
                 </a>
               </p>
-              <p>
+              <p style={{ color: "rgb(77, 12, 12)" }}>
                 <strong>Tips on Dropping:</strong>
                 <a href="https://www.redbull.com/us-en/apex-legends-top-tips">
                   {" "}
@@ -53,7 +53,7 @@ class Home extends Component {
             <div className="line"></div>
 
             <div className="forum-links">
-              <h3>Forums</h3>
+              <h3 style={{ color: "rgb(77, 12, 12)" }}>Forums</h3>
               <p style={{ "text-align": "center" }}>
                 <a href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en">
                   Apex Legends Forums
@@ -72,7 +72,7 @@ class Home extends Component {
 
               <div className="line"></div>
               <div className="forum-links">
-              <h3>Legends</h3>
+              <h3 style={{ color: "rgb(77, 12, 12)" }}>Legends</h3>
               <ul className="legend-refs">
                 <a href="https://www.ea.com/games/apex-legends/about/characters/ash"><li>Ash</li></a>
                 <br></br>
