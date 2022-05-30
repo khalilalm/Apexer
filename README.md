@@ -2,4 +2,4 @@
 
 npm start to start backend server
 
-cd apexer to start web development server
+cd apexer to start Front-End development server
