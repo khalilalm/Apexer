@@ -1,0 +1,21 @@
+.container {
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+}
+.section-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+ margin-right: 50px;
+}
+.section-info > div {
+ margin: 60px;
+}
+.Apex-map {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  order: 5;
+}

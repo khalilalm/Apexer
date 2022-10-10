@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
+import HeroSub from "../HeroSub/HeroSub";
 import twitter from "../images/twitterImg.png";
 import facebook from "../images/facebookImg.png";
 import instagram from "../images/instagramImg.png";
@@ -18,11 +19,11 @@ class Home extends Component {
             
           </div>
         </div>
-
+<HeroSub />
         <div className="content-main">
           <div className="main">
             <div className="tips-tricks">
-              <h3 style={{ color: "rgb(77, 12, 12)" }}>Tips & Tricks</h3>
+              <h4 style={{ color: "rgb(77, 12, 12)" }}>Tips & Tricks</h4>
               <p style={{ color: "rgb(77, 12, 12)" }}>
                 <strong>Improving Aim:</strong>
                 <a href="https://www.giantbomb.com/apex-legends/3030-72014/forums/share-your-pro-tips-here-1862722/">
@@ -112,15 +113,42 @@ class Home extends Component {
 
           </div>
 
-          <div className="news-updates">
+           <div className="news-updates">
             <header>
-              <img className="np" src={newspaper}></img>
-              <h1 className="news-header" style={{ color: "rgb(77, 12, 12)" }}>
-                News & Updates
-              </h1>
+              
+              <h4 className="news-header" style={{ color: "rgb(77, 12, 12)" }}>News & Updates</h4> 
+              <div class="card text-bg-dark" style={{width: "50rem",height: "20rem"}}>
+  <img src="https://d1lss44hh2trtw.cloudfront.net/assets/article/2022/07/25/apex-legends-vantage_feature.jpg" class="card-img" style={{width: "50rem",height: "20rem"}} alt="..."/>
+  <div class="card-img-overlay">
+    <br></br>
+    <h5 class="card-title">New Season 13 Legend: Vantage</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
 
-              <div className="news-container">
-                <div className="patch-notes">
+
+<div class="card mb-3" style={{width: "50rem",height: "20rem"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://myskins.gg/apex/Deathproof_Revenant_sm.png"  class="img-fluid rounded-start" style={{width: "50rem",height: "20rem"}} alt="..."/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Character Bug Fixes for Patch 2.04</h5>
+        <p class="card-text">A few small bug fixes for this update nothing major. These were on-going issues lasting the past two seasons and new bugs for vantage this season.</p>
+        <ul>
+          <li className="card_two_text">The game crashes after Seer’s heartbeat detects the Mirage decoy.</li>
+          <li className="card_two_text">Death Totem not working on Dropoff in Arenas.</li>
+          <li className="card_two_text">Vantage voice lines stacking up in certain gameplay instances.</li>
+          <li className="card_two_text">Negative challenge values in match summary.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+              {/* <div className="news-container"> */}
+                {/* <div className="patch-notes">
                   <article>
                     <h1 style={{ color: "black" }}>Major Patch Notes</h1>
                     <h2
@@ -199,13 +227,14 @@ class Home extends Component {
                   charset="utf-8"
                 ></script>
                 </div>
-              </div>
+              </div>*/}
             </header>
-          </div>
+
+          </div> 
           <div className="videos-guides">
-            <h1 className="video-header" style={{ color: "rgb(77, 12, 12)" }}>
+            <h4 className="video-header" style={{ color: "rgb(77, 12, 12)" }}>
               Videos & Guides
-            </h1>
+            </h4>
             <div className="video-wrapper">
               <iframe
                 width="540"

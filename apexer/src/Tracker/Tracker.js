@@ -72,7 +72,6 @@ class Tracker extends Component {
     const { profile, platform, acrankData } = this.state;
     //Character kill values
     const {
-      
       Pathfinder,
       Wraith,
       Bangalore,

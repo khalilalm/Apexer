@@ -39,8 +39,8 @@
 .line {
   border: 1px solid black;
 }
-.vertical-line{
-  height:5px;
+.vertical-line {
+  height: 5px;
   border: 1px solid black;
 }
 .live-vid {
@@ -48,20 +48,17 @@
   padding: 25px;
 }
 .videos-guides {
-  background-color: rgb(30, 29, 29);
   border-radius: 1%;
   padding: 20px;
-  box-shadow: 10px 10px;
 }
 .news-updates {
   text-align: center;
   border-radius: 1%;
-  background-color: rgb(30, 29, 29);
+
   display: flex;
   flex-direction: column;
   margin: 20px;
   padding: 10px;
-  box-shadow: 10px 10px;
 }
 .video-header:after {
   content: " ";
@@ -74,10 +71,13 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
+.news-header {
+text-align: left;
+}
 .news-header:after {
   content: " ";
   display: block;
+  
   border: 2px solid rgb(77, 12, 12);
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -97,7 +97,7 @@
 }
 
 .LOTW {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -112,26 +112,25 @@
   height: 300px;
   border-radius: 1%;
   margin: 10px;
- 
 }
 .revenent-img:hover {
   box-shadow: 10px 10px;
 }
-.fan-art{
+.fan-art {
   background-color: gray;
 }
 .news-container {
   display: flex;
   flex-direction: column;
 }
-.legend-refs{
+.legend-refs {
   list-style: none;
-text-decoration: none;
+  text-decoration: none;
 }
-a{
+a {
   color: black;
 }
-a:hover{
+a:hover {
   color: maroon;
   text-decoration: none;
 }
@@ -358,6 +357,9 @@ p {
     background-color: rgb(67, 66, 66);
   }
 }
+.card_two_text{
+  text-align: left;
+}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -365,7 +367,18 @@ p {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+  .content-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .content-main{
+    display: flex;
+    flex-direction:column;
+  }
+  .main{
+    display:flex;
+    flex-direction: column;
+  }
 }
 
 /* 
@@ -381,7 +394,140 @@ p {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
+@media (min-width: 414px) and (max-width: 896px) {
+  .content-main {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    color: rgb(70, 0, 0);
+    font-size: 2em;
+    font-size: 100px;
+    position: absolute;
+    top: 37%;
+    left: 34%;
+    font-style: italic;
+  }
+  .title::after {
+    content: "Tracker";
+    position: absolute;
+    top: 59%;
+    left: 34%;
+    font-style: italic;
+  }
+  .patch-notes {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5%;
+    background-color: gray;
+    color: black;
+    text-decoration: black;
+    font-style: italic;
+  }
 
+  .line {
+    border: 1px solid black;
+  }
+  .vertical-line {
+    height: 5px;
+    border: 1px solid black;
+  }
+  .live-vid {
+    float: right;
+    padding: 25px;
+  }
+  .videos-guides {
+    background-color: rgb(30, 29, 29);
+    border-radius: 1%;
+    padding: 20px;
+    box-shadow: 10px 10px;
+  }
+  .news-updates {
+    text-align: center;
+    border-radius: 1%;
+    background-color: rgb(30, 29, 29);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px;
+  }
+  .video-header:after {
+    content: " ";
+    display: block;
+    border: 2px solid rgb(77, 12, 12);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .news-header:after {
+    content: " ";
+    display: block;
+    border: 2px solid rgb(77, 12, 12);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+  .wraith-img {
+    width: 50%;
+    height: 600px;
+    border-radius: 1%;
+    margin: 10px;
+  }
+  .wraith-img:hover {
+    box-shadow: rgb(54, 53, 53) 10px 10px;
+  }
+
+  .LOTW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px;
+  }
+  .lotw-description {
+    text-align: center;
+  }
+  .revenent-img {
+    width: 500px;
+    height: 300px;
+    border-radius: 1%;
+    margin: 10px;
+  }
+  .revenent-img:hover {
+    box-shadow: 10px 10px;
+  }
+  .fan-art {
+    background-color: gray;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .legend-refs {
+    list-style: none;
+    text-decoration: none;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: maroon;
+    text-decoration: none;
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
 }
