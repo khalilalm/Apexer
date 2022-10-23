@@ -16,7 +16,7 @@
     "helmet": "*",
     "materialize-css": "^1.0.0-rc.2",
     "morgan": "^1.10.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "postcss": "^8.4.16",
     "react-linechart": "^1.1.12",
     "react-number-format": "^4.4.1",
