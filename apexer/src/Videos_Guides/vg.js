@@ -8,7 +8,7 @@ class vg extends Component {
                 
                 <h1 class="bg-red-700 border-red-600 border-b p-4 m-4 rounded"> Videos & Guides</h1>
                 <div class="p-8 " >
-                    <img class="w-500 h-500 rounded-md" src="https://placeimg.com/840/480/any" />
+                    <img class="w-50 h-100 rounded-md" src="https://placeimg.com/840/480/any" />
                 </div>
             </div>
         );
