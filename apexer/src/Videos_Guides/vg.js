@@ -10,6 +10,7 @@ class vg extends Component {
                 <div class="p-8 " >
                     <img class="w-50 h-100 rounded-md" src="https://placeimg.com/840/480/any" />
                 </div>
+                <div src="https://placeimg.com/840/480/any"></div>
             </div>
         );
     }
